@@ -5,9 +5,9 @@ import {schemaTypes} from './schemaTypes'
 
 export default defineConfig({
   name: 'default',
-  title: 'Fahrfair',
+  title: 'Templates',
 
-  projectId: 'vt4avvfl',
+  projectId: 'du3pegoi',
   dataset: 'production',
 
   plugins: [structureTool(), visionTool()],
