@@ -34,7 +34,7 @@ jobs:
           context: .
           push: true
           # Use the label_name input if available, otherwise default to 'latest'
-          tags: ${{ secrets.DOCKER_USERNAME }}/your-repo-name:${{ github.event.inputs.label_name || 'latest' }}
+          tags: ${{ secrets.DOCKER_USERNAME }}/lunaacoco:${{ github.event.inputs.label_name || 'latest' }}
           file: ./Dockerfile
           cache-from: type=gha # Cache layers for faster builds
           cache-to: type=gha,mode=max # Save cache to GitHub Actions cache
