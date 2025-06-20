@@ -3,7 +3,7 @@
 
 <div class="hero-content">
 
-    <h1>Enhance your digital footprint</h1>
+    <h1>Enhance your digital footprint Hallo Test</h1>
     <h3>Mit einer modernen Website erreichst du deine Kunden auch zuhause. Lass uns über die Zukunft deines Internetauftritts sprechen!</h3>
     <a href="/" class="button">Jetzt unverbindlich anfragen</a>
 
