@@ -7,9 +7,9 @@
 
 <style>
 :root {
-    --color-primary: #E16F7C;
-    --color-secondary: #f5ccd1;
-    --color-bg: white;
+    --color-primary: #5f4b8b;
+    --color-secondary: #C084FC;
+    --color-bg: #f5f5fa;
     --color-bg-dark: #161037;
     --color-font:  #161037;
     --color-font-light: white;
@@ -52,7 +52,7 @@ button, .button {
     border-radius: 18px;
     border: 0;
     text-decoration: none;
-    color: black;
+    color: var(--color-font-light);
 }
 
 

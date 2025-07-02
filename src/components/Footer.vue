@@ -1,16 +1,16 @@
 <template>
     <footer>
         <div class="links">
-            <a href="">Kontakt</a> 
-            <a href="">Impressum</a>
-            <a href="">Datenschutz</a> 
+            <a href="/kontakt">Kontakt</a> 
+            <a href="/impressum">Impressum</a>
+            <a href="/datenschutz">Datenschutz</a> 
         </div>
         <div class="shortcuts">
             <span class="icon"></span>
             <i class="material-icons">favorite</i>
         </div>
         <div class="logo">
-            <img src="../assets/images/lunaacocodesign.png" alt="">
+            <img src="../assets/images/lunaacocodesign_on_dark.png" alt="">
         </div>
         <div class="copyright">
             <p>@lunaacoco.design</p>
@@ -67,9 +67,6 @@
         display: block;
     }
 
-    .material-icons {
-        color: white;
-    }
 
     @media (min-width: 768px) {
         footer {

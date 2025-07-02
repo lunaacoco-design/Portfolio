@@ -3,14 +3,14 @@
     <button class="header__button" id="btnNav" type="button">
         <i @click="toggleNav" class="material-icons">menu</i>
     </button>
-    <img src="../assets/images/lunaacocodesign.png" alt="">
+    <img src="../assets/images/lunaacocodesign_on_dark.png" alt="">
 </header>
 
 <nav :class="{ 'nav--open' : NavOpen }">
     <ul class="nav-list" :class="{ 'scrolled': isScrolled }, { 'dark-header' : isDarkHeader}">
-        <li class="nav-item left logo"><a href="/"><img src="../assets/images/lunaacocodesign.png" alt=""></a></li>
-        <li class="nav-item right nav-item--active"><a href="/lebenslauf"><i class="material-icons nav-icons">dashboard</i>Lebenslauf</a></li>
-        <li class="nav-item right"><a href="/kontakt"><i class="material-icons nav-icons">dashboard</i>Kontakt</a></li>
+        <li class="nav-item left logo"><a href="/"><div class="logo-img logo-size"></div></a></li>
+        <li class="nav-item right nav-item--active"><a href="/lebenslauf"><span class="nav-icons lebenslauf"></span>Lebenslauf</a></li>
+        <li class="nav-item right"><a href="/kontakt"><span class="nav-icons kontakt"></span>Kontakt</a></li>
     </ul>
     <div class="nav__overlay" @click="NavOpen = false"></div>
 </nav>
@@ -48,7 +48,19 @@ header img {
     object-fit: contain;
 }
 
+    .logo-size {
+        width: 270px;
+        aspect-ratio: 800 / 83;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
 
+    .logo-img {
+        background-image: url(../assets/images/lunaacocodesign_on_dark.png);
+    }
+    .nav-list.scrolled .logo-img {
+        background-image: url(../assets/images/lunaacocodesign_on_light.png);
+    }
 
 .nav-list {
     position: fixed;
@@ -108,6 +120,21 @@ header img {
     color: var(--color-font);
 }
 
+.nav-icons {
+    display: block;
+    height: 20px;
+    width: 20px;
+    object-fit: fill;
+    color: aqua;
+}
+.lebenslauf {
+    background-image: url(../assets/icons/people.svg);
+}
+
+.kontakt {
+    background-image: url(../assets/icons/mail.svg);
+}
+
 li.nav-item.right:nth-of-type(2) {
     margin-top: 50px;
 }
@@ -140,6 +167,8 @@ li.nav-item.right:nth-of-type(2) {
     .nav-list.scrolled {
         background-color: var(--color-bg);
     }
+
+
 
     .dark-header {
         background-color: var(--color-bg-dark);
@@ -218,12 +247,20 @@ li.nav-item.right:nth-of-type(2) {
                 this.NavOpen = !this.NavOpen;
             },
             handleScroll() {
-                this.isScrolled = window.scrollY > 100;
+                if (!this.isDarkHeader) {
+                    this.isScrolled = window.scrollY > 100;
+                } else {
+                    this.isScrolled = false;
+                }
+                
             }
         },
         computed: {
             isDarkHeader() {
-                return this.$route.path.startsWith('/blog/')
+                const path = this.$route.path.toLowerCase();
+                const DarkPaths = ['/blog', '/impressum', '/lebenslauf', '/datenschutz', '/kontakt'];
+
+                return DarkPaths.some(p => path.startsWith(p));
             }
         }
     }
