@@ -1,6 +1,6 @@
 <template lang="">
     <section class="timeline">
-    <div class="timeline-year">Today</div>
+    <h1 class="timeline-year">Today</h1>
     <div class="timeline-row">
     <!-- 1 Monat = 3 duration -->
       <!-- Linke Spalte -->
@@ -8,8 +8,8 @@
         <div class="timeline-entry" style="--duration: 225; --color: #6a3ba5; --gap:36">
           <div class="bar"></div>
           <div class="content">
-            <h3 style="color:#6a3ba5;">B.A. Interaction Design</h3>
-            <strong>CODE University</strong><br>
+            <h2 style="color:#6a3ba5;">B.A. Interaction Design</h2>
+            <h3>CODE University</h3>
             <span>September 2018 - November 2023</span>
             <p><strong>Bachelorarbeit:</strong> Supporting persons with disabilities in their application process<br>
                <strong>Abschlussprojekt:</strong> UX Metrics and KPIs for digital products</p>
@@ -18,8 +18,8 @@
         <div class="timeline-entry" style="--duration: 25; --color: #ff8800;">
           <div class="bar"></div>
           <div class="content">
-            <h3 style="color:#ff8800;">Abitur</h3>
-            <strong>Marienschule Euskirchen</strong><br>
+            <h2 style="color:#ff8800;">Abitur</h2>
+            <h3>Marienschule Euskirchen</h3>
             <span>2009 - 2017</span>
           </div>
         </div>
@@ -30,8 +30,8 @@
         <div class="timeline-entry" style="--duration: 39; --color: #0073e6; --gap: 27">
           <div class="bar"></div>
           <div class="content">
-            <h3 style="color:#0073e6;">Werkstudent UX-Design</h3>
-            <strong>SAP SE</strong><br>
+            <h2 style="color:#0073e6;">Werkstudent UX-Design</h2>
+            <h3>SAP SE</h3>
             <span>Dezember 2023 - Januar 2025</span>
             <li>Redesign von digitalen Produkten zum neuen Theme</li>
             <li>Erstellung und Pflege der Figma Library</li>
@@ -40,8 +40,8 @@
         <div class="timeline-entry" style="--duration: 30; --color: #008000; --gap: 66">
           <div class="bar"></div>
           <div class="content">
-            <h3 style="color:#008000;">Grafikdesigner</h3>
-            <strong>Kalweit ITS GmbH</strong><br>
+            <h2 style="color:#008000;">Grafikdesigner</h2>
+            <h3>Kalweit ITS GmbH</h3>
             <span>Juli 2021 - Februar 2023</span>
             <li>Betreuung der Social Media Kampagne</li>
             <li>Design von internen Dokumenten und Werbematerial</li>
@@ -50,8 +50,8 @@
         <div class="timeline-entry" style="--duration: 30; --color: #008000;">
           <div class="bar"></div>
           <div class="content">
-            <h3 style="color:#008000;">Head of Marketing & PR</h3>
-            <strong>Code + Design Initiative e.V.</strong><br>
+            <h2 style="color:#008000;">Head of Marketing & PR</h2>
+            <h3>Code + Design Initiative e.V.</h3>
             <span>Februar 2019 - Juli 2019</span>
             <li>Eventmanagement</li>
             <li>Social Media Kampagne</li>
@@ -64,12 +64,6 @@
 </template>
 
 <style scoped>
-    body {
-      margin: 0;
-      font-family: sans-serif;
-      background: #f9f9f9;
-      color: #222;
-    }
 
     .timeline {
       width: 90%;

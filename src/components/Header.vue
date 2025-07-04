@@ -123,10 +123,12 @@ header img {
 .nav-icons {
     display: block;
     height: 20px;
-    width: 20px;
+    width: 24px;
     object-fit: fill;
     color: aqua;
+    margin-right: 10px;
 }
+
 .lebenslauf {
     background-image: url(../assets/icons/people.svg);
 }

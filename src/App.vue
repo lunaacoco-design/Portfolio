@@ -23,7 +23,10 @@
     --padding-sides: 12vw;
 }
 
-
+@font-face {
+  font-family: 'League Spartan';
+  src: url(assets/fonts/LeagueSpartan-VariableFont_wght.ttf) format('trueType');
+}
 
 * {
     margin: 0;
@@ -38,7 +41,7 @@ h1, h2, h3 {
     font-family: var(--font-headings);
 }
 
-p, li, a {
+p, li, a, span {
     font-family: var(--font-body);
 }
 

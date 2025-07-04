@@ -29,12 +29,12 @@
                 staticCards: [
                     {
                         title: 'Webdesign',
-                        image: new URL('../assets/images/—Pngtree—web development illustration modern_4484303.png', import.meta.url).href,
+                        image: new URL('../assets/images/Webdesign.png', import.meta.url).href,
                         summary: 'Ich gestalte moderne, funktionale Websites, die zu dir und deiner Zielgruppe passen – vom ersten Entwurf bis zur fertigen Umsetzung. Klar, strukturiert und immer mit einem kreativen Extra.',
                     },
                     {
                         title: 'UX Design',
-                        image: new URL('../assets/images/—Pngtree—web development illustration modern_4484303.png', import.meta.url).href,
+                        image: new URL('../assets/images/UXDesign.png', import.meta.url).href,
                         summary: 'Wenn du schon eine Website hast, werfe ich gerne einen analytischen Blick darauf: Was funktioniert gut, was lässt sich klarer oder nutzerfreundlicher gestalten? Für mich steht dabei immer der Mensch im Mittelpunkt – damit deine Website nicht nur schön aussieht, sondern sich auch gut anfühlt.',
                     },
                     {
