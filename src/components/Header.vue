@@ -9,8 +9,8 @@
 <nav :class="{ 'nav--open' : NavOpen }">
     <ul class="nav-list" :class="{ 'scrolled': isScrolled }, { 'dark-header' : isDarkHeader}">
         <li class="nav-item left logo"><a href="/"><div class="logo-img logo-size"></div></a></li>
-        <li class="nav-item right nav-item--active"><a href="/lebenslauf"><span class="nav-icons lebenslauf"></span>Lebenslauf</a></li>
-        <li class="nav-item right"><a href="/kontakt"><span class="nav-icons kontakt"></span>Kontakt</a></li>
+        <li class="nav-item right nav-item--active"><a href="/lebenslauf"><span class="nav-icons lebenslauf"></span><h3>Lebenslauf</h3></a></li>
+        <li class="nav-item right"><a href="/kontakt"><span class="nav-icons kontakt"></span><h3>Kontakt</h3></a></li>
     </ul>
     <div class="nav__overlay" @click="NavOpen = false"></div>
 </nav>
