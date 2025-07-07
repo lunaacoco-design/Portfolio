@@ -8,6 +8,7 @@
 <style>
 :root {
     --color-primary: #5f4b8b;
+    --color-primary-variant: #503F74;
     --color-secondary: #C084FC;
     --color-bg: #f5f5fa;
     --color-bg-dark: #161037;
@@ -56,6 +57,9 @@ button, .button {
     border: 0;
     text-decoration: none;
     color: var(--color-font-light);
+}
+button:hover, .button:hover {
+  background-color: var(--color-primary-variant);
 }
 
 

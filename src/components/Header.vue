@@ -9,8 +9,12 @@
 <nav :class="{ 'nav--open' : NavOpen }">
     <ul class="nav-list" :class="{ 'scrolled': isScrolled }, { 'dark-header' : isDarkHeader}">
         <li class="nav-item left logo"><a href="/"><div class="logo-img logo-size"></div></a></li>
-        <li class="nav-item right nav-item--active"><a href="/lebenslauf"><span class="nav-icons lebenslauf"></span><h3>Lebenslauf</h3></a></li>
-        <li class="nav-item right"><a href="/kontakt"><span class="nav-icons kontakt"></span><h3>Kontakt</h3></a></li>
+        <li class="nav-item right" :class="{ active : isActive('/lebenslauf') }">
+            <router-link to="/lebenslauf"><span class="nav-icons lebenslauf"></span><h3>Lebenslauf</h3></router-link>
+        </li>
+        <li class="nav-item right" :class="{ active : isActive('/kontakt') }">
+            <router-link to="/kontakt"><span class="nav-icons kontakt"></span><h3>Kontakt</h3></router-link>
+        </li>
     </ul>
     <div class="nav__overlay" @click="NavOpen = false"></div>
 </nav>
@@ -141,7 +145,7 @@ li.nav-item.right:nth-of-type(2) {
     margin-top: 50px;
 }
 
-.nav-item--active a{
+.active a{
     background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -151,6 +155,9 @@ li.nav-item.right:nth-of-type(2) {
         display: none;
     }
     
+    .active a{
+        background-color: transparent;
+    }
 
     .nav-list {
         display: flex;
@@ -214,7 +221,7 @@ li.nav-item.right:nth-of-type(2) {
     }
 
     .nav-item a:hover {
-        color: var(--color-primary);
+        color: var(--color-secondary);
     }
 
     li.nav-item.right:nth-of-type(2) {
@@ -255,6 +262,9 @@ li.nav-item.right:nth-of-type(2) {
                     this.isScrolled = false;
                 }
                 
+            }, 
+            isActive(path) {
+                return this.$route.path.startsWith(path)
             }
         },
         computed: {

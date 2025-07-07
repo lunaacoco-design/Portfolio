@@ -39,7 +39,7 @@
                     },
                     {
                         title: 'Branding',
-                        image: new URL('../assets/images/—Pngtree—web development illustration modern_4484303.png', import.meta.url).href,
+                        image: new URL('../assets/images/BrandDesign.png', import.meta.url).href,
                         summary: 'Ein fertiges Branding ist noch nicht da? Kein Problem. Ich entwickle bei Bedarf ein stimmiges Design-Set – Farben, Schriften, Vorlagen und Logo-Varianten – damit alles zusammenpasst und du direkt loslegen kannst.',
                     },
                 ],
