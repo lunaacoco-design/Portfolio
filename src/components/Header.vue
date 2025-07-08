@@ -3,7 +3,7 @@
     <button class="header__button" id="btnNav" type="button">
         <i @click="toggleNav" class="material-icons">menu</i>
     </button>
-    <img src="../assets/images/lunaacocodesign_on_dark.png" alt="">
+    <div class="logo-header"></div>
 </header>
 
 <nav :class="{ 'nav--open' : NavOpen }">
@@ -27,6 +27,14 @@
     padding: 0;
 }
 
+.logo-header {
+    background-image: url(../assets/images/lunaacocodesign_on_dark.png);
+    width: 35vw;
+    aspect-ratio: 800 / 83;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
     header {
         position: fixed;
@@ -36,6 +44,7 @@
         height: var(--header-height);
         background: var(--color-bg-dark);  /*Farbe von mobile Header*/
         display: flex;
+        z-index: 5;
     }
 
 .header__button {
@@ -46,11 +55,6 @@
     border: none;
     color: white;
 }
-header img {
-    width: 35vw;
-    height: auto;
-    object-fit: contain;
-}
 
     .logo-size {
         width: 270px;
@@ -60,7 +64,7 @@ header img {
     }
 
     .logo-img {
-        background-image: url(../assets/images/lunaacocodesign_on_dark.png);
+        background-image: url(../assets/images/lunaacocodesign_on_light.png);
     }
     .nav-list.scrolled .logo-img {
         background-image: url(../assets/images/lunaacocodesign_on_light.png);
@@ -96,6 +100,7 @@ header img {
     backdrop-filter: blur(2px);
     visibility: hidden;
     opacity: 0;
+    z-index: 100;
 }
 .nav--open .nav__overlay {
     visibility: visible;
@@ -157,6 +162,10 @@ li.nav-item.right:nth-of-type(2) {
     
     .active a{
         background-color: transparent;
+    }
+
+    .logo-img {
+        background-image: url(../assets/images/lunaacocodesign_on_dark.png);
     }
 
     .nav-list {

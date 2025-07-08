@@ -3,7 +3,8 @@
         <h1>{{ sectiontitle }}</h1>
         <div class="cards-div">
             <div v-for="item in items" class="card">
-                <img v-if="item.image" :src="item.image" />
+                <div class="imgwrapper"><img v-if="item.image" :src="item.image" :class="{ imgfix : imgfix }"/></div>
+                
                 <div class="card-text">
                     <h3>{{ item.title  }}</h3>
                     <p>{{ item.summary }}</p>
@@ -46,6 +47,14 @@
         overflow: hidden;
     }
 
+    .imgwrapper {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        background-color: #EDDFFB;
+/*         TODO: Farbe von den Bildern anpassen weil die sind UNTERSCHIEDLICH */
+    }
+
     .card img {
         width: 100%;
         height: auto;
@@ -67,6 +76,8 @@
         align-self: flex-end;
     }
 
+    
+
     @media (min-width: 768px) {
         .cards-div {
             flex-direction: row;
@@ -79,6 +90,11 @@
 
         .card-text {
             padding: 40px;
+        }
+        
+        img.imgfix {
+            height: 200px;
+            width: auto;
         }
     }
 
@@ -97,8 +113,11 @@ export default {
         button: {
             type: Boolean,
             default: false,
+        },
+        imgfix: {
+            type: Boolean,
+            default: false,
         }
-        
     },
     name: 'Cards',
 }

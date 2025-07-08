@@ -1,21 +1,29 @@
 <template>
 
     <h1>Lebenslauf</h1>
-    <Lebenslauf/>
+    <LebenslaufDesktop/>
 </template>
 
-<style>
+<style scoped>
   h1 {
-    padding: 100px var(--padding-sides) 40px var(--padding-sides);
+    padding: 100px 25px 20px 25px;
   }
+
+  @media (min-width: 768px) {
+    h1 {
+      padding: 100px var(--padding-sides) 40px var(--padding-sides);
+    }
+  }
+  
+
 </style>
 
 <script>
-import Lebenslauf from '../components/Lebenslauf.vue';
+import LebenslaufDesktop from '../components/LebenslaufDesktop.vue';
 
   export default {
     components: {
-      Lebenslauf,
+      LebenslaufDesktop,
     }
   }
 </script>

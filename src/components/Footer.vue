@@ -6,15 +6,13 @@
             <a href="/datenschutz">Datenschutz</a> 
         </div>
         <div class="shortcuts">
-            <span class="icon"></span>
-            <i class="material-icons">favorite</i>
+            <a href="https://www.instagram.com/lunaacoco.design/" class="shortcut-icon"><span class="icon"></span>@lunaacoco.design
+            </a>
         </div>
         <div class="logo">
             <img src="../assets/images/lunaacocodesign_on_dark.png" alt="">
         </div>
-        <div class="copyright">
-            <p>@lunaacoco.design</p>
-        </div>
+        
     </footer>
 </template>
 
@@ -45,6 +43,12 @@
         gap: 16px;
         justify-content: center;
         width: 100%;
+    }
+
+    .shortcut-icon {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
     }
 
     .logo {
@@ -81,9 +85,10 @@
 
         .shortcuts {
             grid-column-start: 2;
-            align-items: start;
+            align-items: center;
             width: fit-content;
         }
+
 
         .copyright {
             grid-column-start: 2;

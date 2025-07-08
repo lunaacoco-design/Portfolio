@@ -1,6 +1,6 @@
 <template>
     <HeroLandscape/>
-    <Cards :items="staticCards" sectiontitle="Leistungen"/>
+    <Cards :items="staticCards" sectiontitle="Leistungen" :imgfix="true"/>
     <MediaTextBlock/>
     <Cards :items="sanityPosts" :button="true" sectiontitle="Projekte"/>
     

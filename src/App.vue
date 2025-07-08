@@ -10,6 +10,7 @@
     --color-primary: #5f4b8b;
     --color-primary-variant: #503F74;
     --color-secondary: #C084FC;
+    --color-secondary-variant: #F0E0FF;
     --color-bg: #f5f5fa;
     --color-bg-dark: #161037;
     --color-font:  #161037;
@@ -22,6 +23,7 @@
 
     --header-height: 70px;
     --padding-sides: 12vw;
+    --padding-mobile: 25px;
 }
 
 @font-face {
@@ -57,6 +59,7 @@ button, .button {
     border: 0;
     text-decoration: none;
     color: var(--color-font-light);
+    font-family: var(--font-headings);
 }
 button:hover, .button:hover {
   background-color: var(--color-primary-variant);
