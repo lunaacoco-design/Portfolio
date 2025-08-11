@@ -23,7 +23,7 @@
 
     --header-height: 70px;
     --padding-sides: 12vw;
-    --padding-mobile: 25px;
+    --padding-mobile: 16px;
 }
 
 @font-face {

@@ -1,23 +1,31 @@
 <template>
-    <header>
-    <button class="header__button" id="btnNav" type="button">
-        <i @click="toggleNav" class="material-icons">menu</i>
+    <button class="header-button" :class="{ 'nav--open': NavOpen }" id="btnNav" type="button" @click="toggleNav">
+        <span></span>
+        <span></span>
+        <span></span>
     </button>
-    <div class="logo-header"></div>
-</header>
+    <header>
+        <div class="logo-header"></div>
+    </header>
 
-<nav :class="{ 'nav--open' : NavOpen }">
-    <ul class="nav-list" :class="{ 'scrolled': isScrolled }, { 'dark-header' : isDarkHeader}">
-        <li class="nav-item left logo"><a href="/"><div class="logo-img logo-size"></div></a></li>
-        <li class="nav-item right" :class="{ active : isActive('/lebenslauf') }">
-            <router-link to="/lebenslauf"><span class="nav-icons lebenslauf"></span><h3>Lebenslauf</h3></router-link>
-        </li>
-        <li class="nav-item right" :class="{ active : isActive('/kontakt') }">
-            <router-link to="/kontakt"><span class="nav-icons kontakt"></span><h3>Kontakt</h3></router-link>
-        </li>
-    </ul>
-    <div class="nav__overlay" @click="NavOpen = false"></div>
-</nav>
+    <nav :class="{ 'nav--open': NavOpen }">
+        <ul class="nav-list" :class="{ 'scrolled': isScrolled }, { 'dark-header': isDarkHeader }">
+            <li class="nav-item left logo"><a href="/">
+                    <div class="logo-img logo-size"></div>
+                </a></li>
+            <li class="nav-item right" :class="{ active: isActive('/lebenslauf') }">
+                <router-link to="/lebenslauf"><span class="nav-icons lebenslauf"></span>
+                    <h3>Lebenslauf</h3>
+                </router-link>
+            </li>
+            <li class="nav-item right" :class="{ active: isActive('/kontakt') }">
+                <router-link to="/kontakt"><span class="nav-icons kontakt"></span>
+                    <h3>Kontakt</h3>
+                </router-link>
+            </li>
+        </ul>
+        <div class="nav__overlay" @click="NavOpen = false"></div>
+    </nav>
 </template>
 
 <style scoped>
@@ -34,41 +42,94 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    margin-left: var(--header-height);
 }
 
-    header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: var(--header-height);
-        background: var(--color-bg-dark);  /*Farbe von mobile Header*/
-        display: flex;
-        z-index: 5;
-    }
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height);
+    background: var(--color-bg-dark);
+    /*Farbe von mobile Header*/
+    display: flex;
+    z-index: 5;
+}
 
-.header__button {
+.header-button {
     width: var(--header-height);
+    height: var(--header-height);
     flex-shrink: 0;
     background: none;
     outline: none;
     border: none;
-    color: white;
+    z-index: 15;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
-    .logo-size {
-        width: 270px;
-        aspect-ratio: 800 / 83;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
+/* Span Button */
 
-    .logo-img {
-        background-image: url(../assets/images/lunaacocodesign_on_light.png);
-    }
-    .nav-list.scrolled .logo-img {
-        background-image: url(../assets/images/lunaacocodesign_on_light.png);
-    }
+.header-button span {
+    display: block;
+    width: 21px;
+    height: 2px;
+    margin-bottom: 4px;
+    margin-top: 2px;
+    margin-left: 20px;
+    position: relative;
+
+    background: var(--color-font-light);
+    border-radius: 3px;
+
+    z-index: 15;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
+}
+
+.header-button span:first-child {
+    transform-origin: 0% 0%;
+}
+
+.header-button span:nth-last-child(3) {
+    transform-origin: 0% 100%;
+}
+
+.header-button.nav--open span {
+    opacity: 1;
+    transform: rotate(45deg) translate(0, 0);
+    background: var(--color-font);
+}
+
+.header-button.nav--open span:nth-last-child(2) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.header-button.nav--open span:nth-last-child(1) {
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.logo-size {
+    width: 35vw;
+    aspect-ratio: 800 / 83;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.logo-img {
+    background-image: url(../assets/images/lunaacocodesign_on_light.png);
+}
+
+.nav-list.scrolled .logo-img {
+    background-image: url(../assets/images/lunaacocodesign_on_light.png);
+}
 
 .nav-list {
     position: fixed;
@@ -77,13 +138,15 @@
     height: 100%;
     --slide-width: 270px;
     width: var(--slide-width);
-    padding-top: 30px;
-    z-index: 999;
-    background-color: var(--color-bg);  /* Farbe von mobile Overlay */
+    padding-top: 0px;
+    z-index: 10;
+    background-color: var(--color-bg);
+    /* Farbe von mobile Overlay */
     /* GRADIENT: background: linear-gradient(to bottom, var(--color-bg-dark), var(--color-secondary), var(--color-bg));  */
     display: flex;
     flex-direction: column;
     transform: translateX(calc(var(--slide-width) * -1));
+    transition: transform 0.3s ease;
 }
 
 .nav--open .nav-list {
@@ -100,18 +163,25 @@
     backdrop-filter: blur(2px);
     visibility: hidden;
     opacity: 0;
-    z-index: 100;
+    z-index: 9;
 }
+
 .nav--open .nav__overlay {
     visibility: visible;
     opacity: 1;
 }
 
-.nav-item{
+.nav-item {
     width: 100%;
     height: 50px;
     text-decoration: none;
     list-style: none;
+}
+
+.nav-item.left {
+    height: 70px;
+    padding-left: 40px;
+    z-index: 10;
 }
 
 .nav-item.logo img {
@@ -150,7 +220,7 @@ li.nav-item.right:nth-of-type(2) {
     margin-top: 50px;
 }
 
-.active a{
+.active a {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -159,8 +229,8 @@ li.nav-item.right:nth-of-type(2) {
     header {
         display: none;
     }
-    
-    .active a{
+
+    .active a {
         background-color: transparent;
     }
 
@@ -182,15 +252,20 @@ li.nav-item.right:nth-of-type(2) {
         background-color: transparent;
         transition: background-color 0.3s ease;
     }
+
     .nav-list.scrolled {
         background-color: var(--color-bg);
     }
 
-
+    .logo-size {
+        width: 270px;
+        margin-top: 5px;
+    }
 
     .dark-header {
         background-color: var(--color-bg-dark);
     }
+
     .nav-list.scrolled.dark-header {
         background-color: var(--color-bg-dark);
     }
@@ -207,8 +282,8 @@ li.nav-item.right:nth-of-type(2) {
         font-family: 'Montserrat', serif;
         font-weight: 600;
     }
-    
-    .nav-list.scrolled a{
+
+    .nav-list.scrolled a {
         color: var(--color-font);
     }
 
@@ -217,15 +292,15 @@ li.nav-item.right:nth-of-type(2) {
         width: auto;
     }
 
-    .nav-list .nav-item.right + .nav-item.right {
-        margin-left: 1rem;
+    .nav-list .nav-item.right+.nav-item.right {
+        margin-left: 2rem;
     }
 
     .nav-item.right .nav-item--active a {
         color: var(--color-primary) !important;
     }
-    
-    .nav-item--active a{
+
+    .nav-item--active a {
         background-color: transparent;
     }
 
@@ -241,48 +316,57 @@ li.nav-item.right:nth-of-type(2) {
         display: none;
     }
 }
-
 </style>
 
 <script>
 
-    export default {
-        name: 'Header',
-        data() {
-            return {
-                NavOpen: false,
-                isScrolled: false,
+export default {
+    name: 'Header',
+    data() {
+        return {
+            NavOpen: false,
+            isScrolled: false,
+        }
+    },
+    mounted() {
+        window.addEventListener('scroll', this.handleScroll);
+    },
+    beforeUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
+    },
+    methods: {
+        toggleNav() {
+            this.NavOpen = !this.NavOpen;
+        },
+        handleScroll() {
+            if (!this.isDarkHeader) {
+                this.isScrolled = window.scrollY > 100;
+            } else {
+                this.isScrolled = false;
             }
-        },
-        mounted() {
-            window.addEventListener('scroll', this.handleScroll);
-        },
-        beforeUnmount() {
-            window.removeEventListener('scroll', this.handleScroll);
-        },
-        methods: {
-            toggleNav() {
-                this.NavOpen = !this.NavOpen;
-            },
-            handleScroll() {
-                if (!this.isDarkHeader) {
-                    this.isScrolled = window.scrollY > 100;
-                } else {
-                    this.isScrolled = false;
-                }
-                
-            }, 
-            isActive(path) {
-                return this.$route.path.startsWith(path)
-            }
-        },
-        computed: {
-            isDarkHeader() {
-                const path = this.$route.path.toLowerCase();
-                const DarkPaths = ['/blog', '/impressum', '/lebenslauf', '/datenschutz', '/kontakt'];
 
-                return DarkPaths.some(p => path.startsWith(p));
-            }
+        },
+        isActive(path) {
+            return this.$route.path.startsWith(path)
+        },
+        resetHeaderState() {
+            this.NavOpen = false;
+            this.isScrolled = false;
+        }
+    },
+    computed: {
+        isDarkHeader() {
+            const path = this.$route.path.toLowerCase();
+            const DarkPaths = ['/blog', '/impressum', '/lebenslauf', '/datenschutz', '/kontakt'];
+
+            return DarkPaths.some(p => path.startsWith(p));
+        }
+    },
+    watch: {
+        $route() {
+            this.resetHeaderState();
+            window.scrollTo(0, 0);
         }
     }
+}
 </script>

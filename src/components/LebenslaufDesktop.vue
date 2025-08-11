@@ -8,11 +8,11 @@
       
       <div class="timeline-column left">
         <h1 class="timeline-headings">Education</h1>
-        <div class="timeline-entry codeuni" style="--duration: 225; --color: #441B7A; --gap:36;">
+        <div class="timeline-entry codeuni" style="--duration: 210; --color: #441B7A; --gap:36;">
           <div class="bar"></div>
           <div class="content">
             <h2 style="--color:#441B7A;">B.A. Interaction Design</h2>
-            <h3>CODE University</h3>
+            <h3>CODE University - Berlin</h3>
             <span>September 2018 - November 2023</span>
             <p><strong>Bachelorarbeit:</strong> Supporting persons with disabilities in their application process<br>
                <strong>Abschlussprojekt:</strong> UX Metrics and KPIs for digital products</p>
@@ -35,7 +35,7 @@
           <div class="bar"></div>
           <div class="content">
             <h2 style="--color:#0097AC;">Selbstständige Webdesignerin</h2>
-            <h3>lunaacoco.design</h3>
+            <h3>lunaacoco.design - Oerlinghausen</h3>
             <span>seit Juli 2025</span>
             <li>Webdesign für kleine und mittelständische Unternehmen</li>
             <li>Social Media Betreuung und digitale Kommunikation</li>
@@ -45,7 +45,7 @@
           <div class="bar"></div>
           <div class="content">
             <h2 style="--color:#FF6EC7;">Werkstudent UX-Design</h2>
-            <h3>SAP SE</h3>
+            <h3>SAP SE - Walldorf (remote)</h3>
             <span>Dezember 2023 - Januar 2025</span>
             <li>Redesign von digitalen Produkten zum neuen Theme</li>
             <li>Erstellung und Pflege der Figma Library</li>
@@ -55,20 +55,30 @@
           <div class="bar"></div>
           <div class="content">
             <h2 style="--color:var(--color-primary);">Grafikdesigner</h2>
-            <h3>Kalweit ITS GmbH</h3>
+            <h3>Kalweit ITS GmbH - Hamburg (90% remote)</h3>
             <span>Juli 2021 - Februar 2023</span>
             <li>Betreuung der Social Media Kampagne</li>
             <li>Design von internen Dokumenten und Werbematerial</li>
           </div>
         </div>
-        <div class="timeline-entry" style="--duration: 30; --color: #0097AC;">
+        <div class="timeline-entry" style="--duration: 30; --color: #0097AC; --gap: -1">
           <div class="bar"></div>
           <div class="content">
             <h2 style="--color:#0097AC;">Head of Marketing & PR</h2>
-            <h3>Code + Design Initiative e.V.</h3>
+            <h3>Code + Design Initiative e.V. - Berlin</h3>
             <span>Februar 2019 - Juli 2019</span>
             <li>Eventmanagement</li>
             <li>Social Media Kampagne</li>
+          </div>
+        </div>
+        <div class="timeline-entry" style="--duration: 36; --color: #0097AC;">
+          <div class="bar"></div>
+          <div class="content">
+            <h2 style="--color:#0097AC;">Ehrenamtlicher Coach</h2>
+            <h3>Code + Design Initiative e.V. - deutschlandweit</h3>
+            <span>März 2018 - Februar 2019</span>
+            <li>Eventmanagement</li>
+            <li>Design Workshops</li>
           </div>
         </div>
       </div>
@@ -128,7 +138,7 @@
     }
 
     .codeuni {
-      margin-top: 26vh;
+      margin-top: 36vh;
     }
 
     .timeline::before {

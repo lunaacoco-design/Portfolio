@@ -4,8 +4,8 @@
         <div class="hero-content">
 
             <h1>Enhance your digital footprint</h1>
-            <h3>Mit einer modernen Website erreichst du deine Kunden auch zuhause. Lass uns über die Zukunft deines Internetauftritts sprechen!</h3>
-            <a href="/" class="button">Jetzt unverbindlich anfragen</a>
+            <h3>Mit einer modernen Website erreichst Du Deine Kunden auch zuhause. Lass uns über die Zukunft Deines Internetauftritts sprechen!</h3>
+            <a href="/kontakt" class="button">Jetzt unverbindlich anfragen</a>
 
         </div>
 
@@ -20,7 +20,7 @@
     align-items: center;
     height: 70vh;
     gap: 30px;
-    padding: 16px 0;
+    padding: 16px var(--padding-mobile);
 }
 .hero-content h1 {
     text-align: center;

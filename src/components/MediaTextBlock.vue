@@ -3,7 +3,7 @@
     <img class="about-picture" src="../assets/images/DSC08100-Enhanced-NR-Edit.jpeg" alt="">
     <div class="div-about-text">
         <h1>Über mich</h1>
-        <h3>Mehr als nur hübsch - Designs mit Charakter</h3>
+        <h3>Mehr als eine hübsche Website - Designs mit Charakter</h3>
         <p>Ich bin Emily, und ich liebe es kreative Ideen in klare, individuelle Designs zu übersetzen.<br>
             Was mich motiviert? Ganz einfach: Der Anspruch, mehr zu bieten als der x-te Baukasten oder eine AI-Lösung. 
             Ich gestalte bewusst - mit Kopf, Herz und einem guten Auge für das Besondere.<br>
@@ -26,7 +26,7 @@
 }
 
 .div-picture-text-flex {
-    padding: 50px 16px 50px 16px;
+    padding: 50px var(--padding-mobile);
     display: flex;
     flex-direction: column;
     gap: 32px;

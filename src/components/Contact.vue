@@ -1,7 +1,7 @@
 <template>
     
     <div class="contact-wrapper">
-        <h2>Ich freu mich auf deine Nachricht!</h2>
+        <h2>Ich freu mich auf Deine Nachricht!</h2>
         <div class="contact-flex">
             <div class="image"><img src="../assets/images/DSC08115-Enhanced-NR-Edit.png" alt=""></div>
             <div class="contact-details">
@@ -10,14 +10,14 @@
                     <div class="contact-icon"><img src="../assets/images/Mail.png" alt=""></div>
                     <div class="contact-text">
                         <p>Du liebst es klassisch per Email?</p>
-                        <p>Kontaktiere mich gern wenn du Fragen hast oder Interesse an einem Angebot, mit Infos zu deinem Anliegen:</p>
+                        <p>Kontaktiere mich gern wenn Du Fragen hast oder Interesse an einem Angebot, mit Infos zu Deinem Anliegen:</p>
                         <br>
                         <strong><A HREF="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%68%65%6C%6C%6F%40%6C%75%6E%61%61%63%6F%63%6F%2E%64%65">hello@lunaacoco.de</A></strong>
                     </div>
                     <div class="contact-icon"><img src="../assets/images/Chat.png" alt=""></div>
                     <div class="contact-text">
                         <p>Oder doch eher lässig per Chat?</p>
-                        <p>Dann erreichst du mich auf Instagram per Direktnachricht an:</p>
+                        <p>Dann erreichst Du mich auf Instagram per Direktnachricht an:</p>
                         <br>
                         <strong><a href="https://www.instagram.com/lunaacoco.design/">@lunaacoco.design</a></strong>
                     </div>

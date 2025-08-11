@@ -30,17 +30,17 @@
                     {
                         title: 'Webdesign',
                         image: new URL('../assets/images/Webdesign.png', import.meta.url).href,
-                        summary: 'Ich gestalte moderne, funktionale Websites, die zu dir und deiner Zielgruppe passen – vom ersten Entwurf bis zur fertigen Umsetzung. Klar, strukturiert und immer mit einem kreativen Extra.',
+                        summary: 'Ich gestalte moderne, funktionale Websites, die zu Dir und Deiner Zielgruppe passen – vom ersten Entwurf bis zur fertigen Umsetzung. Klar, strukturiert und immer mit einem kreativen Extra.',
                     },
                     {
                         title: 'UX Design',
                         image: new URL('../assets/images/UXDesign.png', import.meta.url).href,
-                        summary: 'Wenn du schon eine Website hast, werfe ich gerne einen analytischen Blick darauf: Was funktioniert gut, was lässt sich klarer oder nutzerfreundlicher gestalten? Für mich steht dabei immer der Mensch im Mittelpunkt – damit deine Website nicht nur schön aussieht, sondern sich auch gut anfühlt.',
+                        summary: 'Wenn Du schon eine Website hast, werfe ich gerne einen analytischen Blick darauf: Was funktioniert gut, was lässt sich klarer oder nutzerfreundlicher gestalten? Für mich steht dabei immer der Mensch im Mittelpunkt – damit Deine Website nicht nur schön aussieht, sondern sich auch gut anfühlt.',
                     },
                     {
                         title: 'Branding',
                         image: new URL('../assets/images/BrandDesign.png', import.meta.url).href,
-                        summary: 'Ein fertiges Branding ist noch nicht da? Kein Problem. Ich entwickle bei Bedarf ein stimmiges Design-Set – Farben, Schriften, Vorlagen und Logo-Varianten – damit alles zusammenpasst und du direkt loslegen kannst.',
+                        summary: 'Ein fertiges Branding ist noch nicht da? Kein Problem. Ich entwickle bei Bedarf ein stimmiges Design-Set – Farben, Schriften, Vorlagen und Logo-Varianten – damit alles zusammenpasst und Du direkt loslegen kannst.',
                     },
                 ],
                 }

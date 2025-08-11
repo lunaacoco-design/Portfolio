@@ -8,6 +8,7 @@
         <div class="shortcuts">
             <a href="https://www.instagram.com/lunaacoco.design/" class="shortcut-icon"><span class="icon"></span>@lunaacoco.design
             </a>
+            <p>Keine Cookies eingebunden</p>
         </div>
         <div class="logo">
             <img src="../assets/images/lunaacocodesign_on_dark.png" alt="">
@@ -39,9 +40,9 @@
 
     .shortcuts {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         gap: 16px;
-        justify-content: center;
+        align-items: center;
         width: 100%;
     }
 
@@ -85,7 +86,7 @@
 
         .shortcuts {
             grid-column-start: 2;
-            align-items: center;
+            align-items: flex-start;
             width: fit-content;
         }
 
