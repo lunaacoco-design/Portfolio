@@ -16,7 +16,7 @@
         Marktstra&szlig;e 42<br />
         33813 Oerlinghausen</p>
 
-        <p>Telefon: 015735383491<br />
+        <p>Telefon: 0163-7085687<br />
         E-Mail: hello@lunaacoco.de</p>
         <p>Verantwortliche Stelle ist die nat&uuml;rliche oder juristische Person, die allein oder gemeinsam mit anderen &uuml;ber die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.&nbsp;B. Namen, E-Mail-Adressen o. &Auml;.) entscheidet.</p>
 

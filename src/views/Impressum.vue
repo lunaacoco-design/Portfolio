@@ -10,7 +10,7 @@
         </p><p> <strong>Vertreten durch: </strong><br>
         Emily Schiebilski<br>
         </p><p><strong>Kontakt:</strong> <br>
-        Telefon: 01573-5383481<br>
+        Telefon: 0163-7085687<br>
         E-Mail: <a href='mailto:hello@lunaacoco.de'>hello@lunaacoco.de</a></br></p><p><strong>Umsatzsteuer-ID: </strong> <br>
         Umsatzsteuer-Identifikationsnummer gemäß §27a Umsatzsteuergesetz: ustid<br><br>
         <strong>Wirtschafts-ID: </strong><br>
