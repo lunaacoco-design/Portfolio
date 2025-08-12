@@ -270,6 +270,10 @@ li.nav-item.right:nth-of-type(2) {
         background-color: var(--color-bg-dark);
     }
 
+    .header-button {
+        display: none;
+    }
+    
     .nav-item {
         width: auto;
     }
