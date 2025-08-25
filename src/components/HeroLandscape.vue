@@ -37,7 +37,7 @@
         background-image: linear-gradient(
             rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)
-          ), url(../assets/images/IMG_20211127_111028.jpg);
+          ), url(../assets/images/IMG_20211127_111028.webp);
         background-size: cover;
         background-position: top center;
         background-attachment: fixed;
