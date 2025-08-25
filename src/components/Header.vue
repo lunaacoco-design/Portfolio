@@ -287,6 +287,10 @@ li.nav-item.right:nth-of-type(2) {
         font-weight: 600;
     }
 
+    .nav-item.left {
+        padding-left: 0;
+    }
+
     .nav-list.scrolled a {
         color: var(--color-font);
     }

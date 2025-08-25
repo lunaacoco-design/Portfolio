@@ -40,7 +40,7 @@
     box-sizing: border-box;
   }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: var(--font-headings);
 }
 
@@ -60,6 +60,7 @@ button, .button {
     text-decoration: none;
     color: var(--color-font-light);
     font-family: var(--font-headings);
+    cursor: pointer;
 }
 button:hover, .button:hover {
   background-color: var(--color-primary-variant);

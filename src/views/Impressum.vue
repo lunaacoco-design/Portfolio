@@ -34,6 +34,10 @@
     .wrapper {
         margin: 100px var(--padding-sides);
     }
+
+    h1 {
+        margin-bottom: 20px;
+    }
 </style>
 
 <script>

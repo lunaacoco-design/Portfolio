@@ -20,7 +20,7 @@
     align-items: center;
     height: 70vh;
     gap: 30px;
-    padding: 16px var(--padding-mobile);
+    margin: 16px var(--padding-mobile);
 }
 .hero-content h1 {
     text-align: center;
@@ -47,8 +47,7 @@
 
     .hero-content {
         align-items: start;
-        margin: 0 var(--padding-sides) 0 var(--padding-sides);
-
+        margin: 0 var(--padding-sides);
         text-align: left;
     }
 

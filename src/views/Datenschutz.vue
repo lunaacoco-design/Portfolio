@@ -41,6 +41,10 @@
     .wrapper {
         margin: 100px var(--padding-sides);
     }
+
+    h1, h2, h3, p {
+        margin-bottom: 20px;
+    }
 </style>
 
 <script>
