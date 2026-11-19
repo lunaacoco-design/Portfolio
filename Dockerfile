@@ -1,5 +1,5 @@
 # --- Build Stage ---
-FROM oven/bun:1.2.16 as build
+FROM oven/bun:1.4.5-alpine as build
 
 WORKDIR /app
 
